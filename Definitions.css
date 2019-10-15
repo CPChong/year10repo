@@ -1,0 +1,11 @@
+#example1 {
+    padding: 65px;
+    background: url(Naturewebsite.png);
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+  .top-container{
+    width:100%;
+  }
