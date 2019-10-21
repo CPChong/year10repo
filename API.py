@@ -1,8 +1,7 @@
 import requests
 from tkinter import *
 from PIL import ImageTk,Image
-import pyglet
-from pyglet_gui.theme import Button
+import webbrowser
 
 def headerHTML():
         myfile = open("API.html","w")
@@ -192,28 +191,17 @@ def main():
                 data = "Error has occured" 
 main()
 
-master = Tk()
-
-def callback(is_pressed):
-    print('Button was pressed to state', is_pressed)
-
-button = Button('Hello world', on_press=callback)
+def submit():
+    webbrowser.open_new('file:///Users/christopher.chong/Documents/Design/API.html')
 
 
-animation = pyglet.image.load_animation ('srss.gif')
-animSprite = pyglet.sprite.Sprite(animation)
+root = Tk()
+root.geometry("400x250")
 
-w = animSprite.width
-h = animSprite.height
 
-window = pyglet.window.Window(width = w, height = h)
+b1 = Button(root, text = "Click here to go to Environmental Data", command=submit)
+b1.pack()
 
-r,g,b,alpha = 0.5, 0.5, 0.8, 0.5
 
-pyglet.gl.glClearColor(r,g,b,alpha)
-@window.event
-def on_draw():
-        window.clear()
-        animSprite.draw()
 
-pyglet.app.run()
+mainloop()
