@@ -1,13 +1,94 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="Definitions.css">
+<link rel="icon" href="sunrise-icon.png" type="image/gif" sizes="16x16">
 <html>
 <body>
+<head>
+  <title>Definitions</title>
+</head>
 
 <div class="top-container">
-<div id="example1">
-<p> <font face="Arial" color="white" size="6"> <center> hi </center></font></p>
+    <div id="example1">
+    <h1> <font face="verdana" color="#C4C8F9" size="10"> <center> Definitions </center></font></h1>
+
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="file:///Users/christopher.chong/Documents/Design/API.html" target="_blank">Home</a>
+            </div>
+            <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+        </div>
+    </div>
+</div>
 </div>
 </div>
 
+<div class="row">
+        <div class="column" style="background-color:#C0C1DF;">
+          <h2>Sunrise </h2>
+          <p>The rise or ascent of the sun above the horizon in the morning.</p>
+
+          <h2>Solar Noon </h2>
+          <p>Moment when the sun is at its highest point in the sky in the day.</p>
+
+          <h2>Sun Altitude </h2>
+          <p>The angle of the sun relative to the Earth's horizon.</p>
+
+          <h2>Sun Azimuth </h2>
+          <p>The angle of the sun relative to the Earth.</p>
+
+          <h2>Moon Set </h2>
+          <p>The setting or descent of the moon below the horizon in the evening.</p>
+
+          <h2>Moon Distance </h2>
+          <p>The distance between the Earth and the Moon.</p>
+
+          <h2>Moon Parallactic Angle </h2>
+          <p>The spherical angle between the hour circle and the vertical circle passing through a celestial body.</p>
+        </div>
+
+        <div class="column" style="background-color:#B0B1CB;">
+          <h2>Sunset</h2>
+          <p>The setting or descent of the sun below the horizon in the evening.</p>
+          <h2>Day Length </h2>
+          <p>The length of the day im the interval of sunrise and sunset.</p>
+
+          <h2>Sun Distance </h2>
+          <p>The distance between the Earth and the Sun.</p>
+
+          <h2>  </h2>
+          <p> </p>
+
+          <h2>Moon Rise </h2>
+          <p>The rise or ascent of the moon above the horizon in the morning.</p>
+
+          <h2>Moon Altitude </h2>
+          <p>Moment when the sun is at its highest point in the sky in the day.</p>
+
+          <h2>Moon Azimuth </h2>
+          <p>The angle of the moon relative to the Earth.</p>
+
+          <h2><font color= "#B0B1CB"> Moon Azimuth </font> </h2>
+          <p><font color= "#B0B1CB">The angle of the moon relative to the Earth.i</p>
+
+        </div>
+      </div>
+
 </body>
-</html>
+
+ <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
+
+  </html>
