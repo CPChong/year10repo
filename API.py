@@ -196,6 +196,7 @@ def submit():
 
 
 root = Tk()
+root.title("Environmental Data")
 root.geometry("400x250")
 
 
